@@ -20,7 +20,7 @@ public class ICanToggleACell extends JUnitStory {
 				.useStoryLoader(new LoadFromClasspath(this.getClass()))
 				// CONSOLE and TXT reporting
 				.useStoryReporterBuilder(
-						new StoryReporterBuilder().withDefaultFormats().withFormats(Format.CONSOLE, Format.TXT));
+						new StoryReporterBuilder().withDefaultFormats().withFormats(Format.HTML, Format.TXT, Format.CONSOLE));
 	}
 
 	// Here we specify the steps classes
